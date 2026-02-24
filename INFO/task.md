@@ -25,7 +25,15 @@
 - [x] Added new animations (shimmering headers, glass-card sweep, h2 underline)
 - [x] Fixed Analysis cards (better visual feedback on click/expand)
 
-### Phase 4: Polish & Delivery
+### Phase 4: Refinement & Polish (`melhora`)
+
+- [x] Refined micro-copy and hero subtitle
+- [x] Added visual section labels (badges)
+- [x] Implemented custom scrollbar and selection colors
+- [x] Softened H2 headings with gradient borders
+- [x] Added inner glows for depth on glass cards
+
+### Phase 5: Polish & Delivery
 
 - [x] Language unification and simplification
 - [x] Responsiveness check across all sections

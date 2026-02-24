@@ -28,6 +28,14 @@ Reformulamos completamente a apresentação web sobre Business Intelligence, int
 - **Feedback Visual nas Análises**: Ao clicar nos tipos de análise (Descritiva, etc.), o card brilha, a borda muda e o conteúdo expande suavemente com indicação clara.
 - **Responsive Design**: O layout se adapta perfeitamente, com as tabelas de dados suportando scroll horizontal em dispositivos pequenos.
 
+### 4. Refinement & Polish (Branch: `melhora`) 💎
+
+- **Micro-Copy**: Subtítulo do Hero atualizado para um tom mais evocativo ("Decifrando o Futuro...").
+- **Visual Section Labels**: Adição de badges de vidro para marcar visualmente o início das seções (Conceito, Vantagens, Execução).
+- **Custom Scrollbar**: Barra de rolagem estilizada em verde neon e trilho escuro.
+- **Selection Color**: Destaque de texto em verde neon com texto preto.
+- **Typography Polish**: H2 com borda em gradiente e sombra interna nos glass-cards.
+
 ## Como Usar a Nova Apresentação
 
 1. **Dashboard Principal**: Logo no início, veja a definição core baseada no seu documento.

@@ -32,6 +32,13 @@ Complete BI presentation with modern design and interactive elements, reformulat
 - **Summary Modal:** Automated summary of content in high-tech modal.
 - **Focus Mode:** Simplifies UI for better presentation readability.
 
+### Refinement & Polish (Branch: `melhora`) ✅
+
+- **Micro-Copy:** Updating hero subtitle and section lead texts for a more professional tone.
+- **Visual Depth:** Adding inner glows to glass cards and custom scrollbar styles.
+- **Typography Polish:** Softening section headings (H2) with gradient borders and subtle shadows.
+- **Interaction Refinement:** Enhancing hover states and selection colors for a premium feel.
+
 ## Verification Plan
 
 ### Manual UI Testing
