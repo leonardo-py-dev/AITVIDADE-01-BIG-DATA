@@ -1,47 +1,111 @@
+/* ===================== RESUMO COMPLETO (EXPAND/COLLAPSE) ===================== */
+
+/* Estilo do botão "Resumo Completo" */
 .btn-resumo-completo {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: rgba(0, 230, 118, 0.08);
+    border: 1px solid rgba(0, 230, 118, 0.2);
+    border-radius: 8px;
+    color: var(--accent-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .btn-resumo-completo:hover {
-  background-color: #0056b3;
+    background: rgba(0, 230, 118, 0.15);
+    border-color: rgba(0, 230, 118, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 230, 118, 0.15);
+    transform: translateY(-2px);
 }
 
-.expand-icon {
-  display: inline-block;
-  transition: transform 0.3s;
+.btn-resumo-completo .expand-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-resumo-completo.active .expand-icon {
+    transform: rotate(180deg);
 }
 
 .resumo-container {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.5s ease,
+                margin 0.5s ease;
+    opacity: 0;
+    margin-top: 0;
 }
 
 .resumo-container.expanded {
-  max-height: 500px; /* adjust based on content size */
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: var(--spacing-md);
 }
 
 .resumo-content {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
-  color: #333;
+    background: var(--bg-secondary);
+    backdrop-filter: var(--glass-backdrop);
+    border: var(--glass-border);
+    border-radius: 16px;
+    padding: var(--spacing-md);
+    animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resumo-content p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+.resumo-content h4 {
+    color: var(--accent-primary);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+.resumo-content ul,
+.resumo-content ol {
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+}
+
+.resumo-content li {
+    margin-bottom: 8px;
+    line-height: 1.7;
 }
 
 .resumo-section {
-  margin-bottom: 20px;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(0, 230, 118, 0.08);
+}
+
+.resumo-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .resumo-expanded-status {
