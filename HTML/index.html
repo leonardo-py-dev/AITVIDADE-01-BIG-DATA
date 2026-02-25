@@ -533,6 +533,31 @@
             // Initial call to interactions loop
             state.raf = requestAnimationFrame(updateUI);
         });
+        // === SUMMARY MODAL FUNCTIONALITY ===
+const summaryBtn = document.getElementById('summary-btn');
+const closeBtn = document.getElementById('close-modal');
+const summaryModal = document.getElementById('summary-modal');
+
+if (summaryBtn) {
+    summaryBtn.addEventListener('click', () => {
+        summaryModal.style.display = 'flex';
+    });
+}
+
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        summaryModal.style.display = 'none';
+    });
+}
+
+// Fechar modal ao clicar fora dele
+if (summaryModal) {
+    summaryModal.addEventListener('click', (e) => {
+        if (e.target === summaryModal) {
+            summaryModal.style.display = 'none';
+        }
+    });
+}
     </script>
 </body>
 </html>
