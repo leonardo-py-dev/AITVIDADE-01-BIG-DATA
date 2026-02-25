@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence | Estratégia Futurista</title>
+    <meta name="description" content="Tudo sobre Business Intelligence: ciclo de vida dos dados, ecossistema, ferramentas de mercado e cases práticos.">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .tool-card.expanded { border-color: var(--accent) !important; background: rgba(0,230,118,0.08) !important; }
+        .tool-card.expanded .tool-desc { max-height: 100px !important; margin-top: 0.6rem !important; }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glows -->
+    <div class="mouse-spotlight"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar-utils">
+        <a href="#hero" class="sidebar-btn active" data-tooltip="Início">⌂</a>
+        <a href="#concept" class="sidebar-btn" data-tooltip="Conceito">★</a>
+        <a href="#advantages" class="sidebar-btn" data-tooltip="Vantagens">⚡</a>
+        <a href="#bi-practice" class="sidebar-btn" data-tooltip="Na Prática">◆</a>
+        <a href="#analysis-types" class="sidebar-btn" data-tooltip="Análises">◈</a>
+        <a href="#benefits" class="sidebar-btn" data-tooltip="Benefícios">✓</a>
+        <a href="#tools" class="sidebar-btn" data-tooltip="Ferramentas">⚙</a>
+        <a href="#references" class="sidebar-btn" data-tooltip="Referências">📚</a>
+
+        <div style="height: 1px; background: linear-gradient(90deg, transparent, rgba(0,230,118,0.12), transparent); margin: 4px 6px;"></div>
+
+        <div class="sidebar-btn" id="summary-btn" data-tooltip="Resumo Completo">📝</div>
+        <div class="sidebar-btn" id="share-btn" data-tooltip="Copiar Link">🔗</div>
+        <div class="sidebar-btn" id="focus-toggle" data-tooltip="Modo Foco">👁</div>
+    </aside>
+
+    <!-- Summary Modal -->
+    <div id="summary-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <h2>Resumo Executivo: Business Intelligence</h2>
+
+            <div class="summary-body">
+                <h3>1. O Que é BI?</h3>
+                <p>BI descreve processos, técnicas e ferramentas para coleta, processamento e análise de dados, gerando insights que auxiliam na tomada de decisões empresariais.</p>
+
+                <h3>2. Como o BI Funciona</h3>
+                <ul>
+                    <li><strong>Coleta:</strong> Seleção diversa de dados em fontes internas e externas.</li>
+                    <li><strong>Organização:</strong> Agregar diferentes tipos de dados em um local centralizado.</li>
+                    <li><strong>Processamento:</strong> Mineração de dados para obter informações úteis.</li>
+                    <li><strong>Visualização:</strong> Apresentação em dashboards para entendimento prático.</li>
+                    <li><strong>Decisão:</strong> Insights usados para tomada de decisões estratégicas.</li>
+                </ul>
+
+                <h3>3. Vantagens do BI</h3>
+                <p>O BI se destaca por sua simplicidade e acessibilidade, sendo essencial para a tomada de decisões estratégicas em todas as empresas.</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ==================== HERO ==================== -->
+        <header id="hero" class="hero-section">
+            <h1 class="animate-enter">BUSINESS INTELLIGENCE</h1>
+            <p class="subtitle animate-enter delay-100">Decifrando o Futuro através da Inteligência de Dados</p>
+            <div class="hero-decoration animate-enter delay-200"></div>
+        </header>
+
+        <!-- ==================== CONCEITO ==================== -->
+        <section id="concept" class="section-block reveal">
+            <span class="section-label">Fundamentos</span>
+            <h2>Arquitetura da Inteligência</h2>
+            <div class="glass-card concept-grid">
+                <div class="concept-main">
+                    <p class="definition-text">
+                        O Business Intelligence (BI) transcende a mera visualização de dados; ele é o <span class="highlight">ecossistema estratégico</span> que sustenta a competitividade moderna. Trata-se de uma infraestrutura tecnológica integrada para a extração, modelagem e interpretação de grandes volumes de informação, convertendo <span class="highlight-success">dados brutos em ativos de decisão</span>.
+                    </p>
+                    <p class="detail-text">
+                        Diferente das abordagens puramente estáticas, o BI moderno utiliza <strong>Data Mining</strong> e <strong>Analytics Avançado</strong> para identificar padrões ocultos no comportamento do mercado, permitindo que empresas corrijam rotas em tempo real.
+                    </p>
+                </div>
+                
+                <div class="concept-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div>
+                            <h4>Segurança de Dados</h4>
+                            <p>Governança robusta garantindo que a informação certa chegue à pessoa certa.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <div>
+                            <h4>Agilidade Estratégica</h4>
+                            <p>Redução drástica no tempo entre a coleta do dado e a execução da estratégia.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📉</div>
+                        <div>
+                            <h4>Mitigação de Riscos</h4>
+                            <p>Uso de métricas históricas para prever gargalos operacionais antes que ocorram.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+    </main>
+
+    <div class="container classic-layout">
+
+        <hr class="section-divider">
+
+        <!-- ==================== VANTAGENS DO BI ==================== -->
+        <section id="advantages" class="section-block">
+            <span class="section-label">Vantagens</span>
+            <h2 class="reveal">Por que usar BI?</h2>
+            <div class="glass-card reveal">
+                <p class="definition-text">
+                    Em relação às outras áreas de dados, o BI se destaca por sua <span class="highlight">simplicidade</span>. Isso o torna <span class="highlight-success">acessível à maior parte dos integrantes de uma empresa</span>. Além disso, ele é praticamente a parte essencial para a tomada de decisões estratégicas em todas as empresas hoje em dia.
+                </p>
+            </div>
+
+            <div class="grid-2-col stagger-children" style="margin-top: var(--spacing-md); display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md);">
+                <div class="glass-card card-hover reveal stagger-item">
+                    <h3 class="card-title">📊 BI vs Big Data</h3>
+                    <p>Enquanto o Big Data foca na ingestão e processamento de petabytes de dados não estruturados (os 5 Vs), o <strong>BI foca na precisão e relevância</strong>. O BI converte volumes massivos em dashboards acionáveis, permitindo que a liderança visualize métricas críticas (KPIs) sem a necessidade de clusters complexos de Hadoop ou Spark para o consumo final.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <h3 class="card-title">🚀 BI vs Data Science</h3>
+                    <p>Data Science é exploratório, focado em modelos probabilísticos e IA. O <strong>BI é confirmatório e operacional</strong>. Ele fornece a base de verdade única da empresa, estruturando o passado e o presente para que a Ciência de Dados possa, então, aplicar algoritmos preditivos sobre dados já saneados e confiáveis.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <h3 class="card-title">🏗️ BI vs Data Warehouse</h3>
+                    <p>O DW é o alicerce técnico — um repositório otimizado para leitura. O <strong>BI é a camada de inteligência</strong> que respira sobre esses dados. Um Warehouse sem BI é um depósito silencioso; o BI é a interface que interroga esse depósito para gerar valor financeiro e operacional real.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <h3 class="card-title">💧 BI vs Data Lake</h3>
+                    <p>Data Lakes são amplos e flexíveis, mas propensos ao caos (Data Swamps). O <strong>BI atua como a refinaria</strong>, aplicando regras de negócio e governança. Ele garante que o usuário final receba "água potável" (dados limpos) em vez de navegar em um oceano de dados crus e desconexos.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- ==================== BI NA PRÁTICA ==================== -->
+        <section id="bi-practice" class="section-block">
+            <span class="section-label">Execução</span>
+            <h2 class="reveal">O BI no Mundo Real</h2>
+            <p class="reveal" style="color: var(--text-muted); margin-bottom: var(--spacing-md); font-size: 0.95rem;">Como o Business Intelligence funciona no dia a dia das empresas</p>
+
+            <div class="glass-card reveal" style="margin-bottom: var(--spacing-md);">
+                <h3 class="card-title" style="margin-bottom: 1rem;">⚙️ O Processo do BI em 5 Etapas</h3>
+                <p style="margin-bottom: 1.2rem;">Podemos dividir o processo do BI em 5 partes principais:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.1);">
+                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">📥</div>
+                        <strong style="color: var(--accent);">1. Coleta</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Seleção de dados em fontes internas (bancos de dados) e externas (pesquisas, entrevistas).</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.1);">
+                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🗂️</div>
+                        <strong style="color: var(--accent);">2. Organização</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Dados agregados em um local centralizado, do Data Mart às plataformas de nuvem.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.1);">
+                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <strong style="color: var(--accent);">3. Processamento</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Mineração de dados: inter-relacionar e analisar para gerar informações úteis.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.1);">
+                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">📊</div>
+                        <strong style="color: var(--accent);">4. Visualização</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Dados apresentados em dashboards para entendimento prático e simples.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.1);">
+                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🎯</div>
+                        <strong style="color: var(--accent);">5. Decisão</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Insights usados para tomada de decisões estratégicas da empresa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card reveal" style="margin-bottom: var(--spacing-md);">
+                <h3 class="card-title" style="margin-bottom: 1rem;">🔗 Explore na Prática</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <a href="https://powerbi.microsoft.com/pt-br/guidedtour/power-platform/power-bi/3/5" target="_blank" rel="noopener" style="display: block; padding: 1.2rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.15); text-decoration: none; color: inherit; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--accent)';this.style.background='rgba(0,230,118,0.1)'" onmouseout="this.style.borderColor='rgba(0,230,118,0.15)';this.style.background='rgba(0,230,118,0.05)'">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🖥️</div>
+                        <strong style="color: var(--accent);">Tour pelo Power BI</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-muted);">Veja como o Power BI funciona na prática com o tour guiado oficial da Microsoft.</p>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/196a0djlsS9rkIyYKj4IztD77ayXoZOmONtyjsYtoshw/edit?usp=sharing" target="_blank" rel="noopener" style="display: block; padding: 1.2rem; border-radius: 12px; background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.15); text-decoration: none; color: inherit; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--accent)';this.style.background='rgba(0,230,118,0.1)'" onmouseout="this.style.borderColor='rgba(0,230,118,0.15)';this.style.background='rgba(0,230,118,0.05)'">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📋</div>
+                        <strong style="color: var(--accent);">Planilha de Exemplos de BI</strong>
+                        <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-muted);">Veja exemplos reais de empresas que utilizam Business Intelligence no dia a dia.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="glass-card reveal">
+                <h3 class="card-title" style="margin-bottom: 1rem;">🎓 Onde Aprender e Praticar BI</h3>
+                <p style="margin-bottom: 1.2rem;">Plataformas recomendadas para começar a aprender e mexer com BI:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <div style="padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.03); border: 1px solid rgba(0,230,118,0.08);">
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Microsoft Learn</h4>
+                        <p style="font-size: 0.9rem;">O melhor lugar para aprender <strong>Power BI</strong> (a ferramenta mais usada no mundo). Trilhas gratuitas do iniciante ao avançado, incluindo uso do Copilot.</p>
+                    </div>
+                    <div style="padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.03); border: 1px solid rgba(0,230,118,0.08);">
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Data Science Academy</h4>
+                        <p style="font-size: 0.9rem;">Curso gratuito "Microsoft Power BI Para Business Intelligence e Data Science" — muito reconhecido no Brasil.</p>
+                    </div>
+                    <div style="padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.03); border: 1px solid rgba(0,230,118,0.08);">
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Google Skillshop</h4>
+                        <p style="font-size: 0.9rem;">Treinamentos gratuitos para aprender <strong>Looker Studio</strong>, a ferramenta de BI do Google, ideal para iniciantes.</p>
+                    </div>
+                    <div style="padding: 1rem; border-radius: 12px; background: rgba(0,230,118,0.03); border: 1px solid rgba(0,230,118,0.08);">
+                        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Santander Open Academy</h4>
+                        <p style="font-size: 0.9rem;">Bolsas para cursos de análise de dados e BI em parceria com a Alura e universidades renomadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- ==================== BENEFÍCIOS ==================== -->
+        <section id="benefits" class="section-block">
+            <h2 class="reveal">Benefícios do BI</h2>
+            <div class="grid-3 stagger-children">
+                <div class="glass-card card-hover reveal stagger-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="card-title">Eficiência Operacional</h3>
+                    <p>Otimização de fluxos de trabalho através da automação de processos analíticos, reduzindo gargalos humanos e erros de processamento manual.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <div class="benefit-icon">📊</div>
+                    <h3 class="card-title">Decisões Empíricas</h3>
+                    <p>Substituição da intuição por evidências estatísticas sólidas, garantindo decisões de alto impacto fundamentadas em padrões de dados reitificáveis.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="card-title">Monitoramento Real-Time</h3>
+                    <p>Acesso imediato a métricas críticas de desempenho (KPIs), permitindo uma visão holística e instantânea da saúde corporativa.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <div class="benefit-icon">📈</div>
+                    <h3 class="card-title">Agilidade de Resposta</h3>
+                    <p>Capacidade de pivotar estratégias rapidamente frente a mudanças voláteis do mercado, baseando-se em alertas preditivos e automáticos.</p>
+                </div>
+                <div class="glass-card card-hover reveal stagger-item">
+                    <div class="benefit-icon">🔮</div>
+                    <h3 class="card-title">Vantagem Competitiva</h3>
+                    <p>Identificação precoce de tendências emergentes e comportamentos de consumo, permitindo que a empresa preceda a concorrência.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- ==================== TIPOS DE ANÁLISE ==================== -->
+        <section id="analysis-types" class="section-block">
+            <h2 class="reveal">Tipos de Análise de Dados</h2>
+            <div class="analysis-flow stagger-children">
+                <div class="analysis-card reveal stagger-item" onclick="this.classList.toggle('expanded')">
+                    <div class="card-number">01</div>
+                    <h3>Descritiva</h3>
+                    <p class="card-question">"O que aconteceu?"</p>
+                    <p>Foca no retrospecto histórico. Utiliza mineração de dados e agregação para fornecer contexto sobre eventos passados.</p>
+                    <div class="expand-content">
+                        <p><strong>Detalhes:</strong> Envolve o uso de dashboards, scorecards e relatórios financeiros. Essencial para entender o market share e a saúde financeira atual vs períodos anteriores.</p>
+                    </div>
+                    <span class="expand-hint">▸ clique para expandir</span>
+                </div>
+                <div class="analysis-card reveal stagger-item" onclick="this.classList.toggle('expanded')">
+                    <div class="card-number">02</div>
+                    <h3>Diagnóstica</h3>
+                    <p class="card-question">"Por que aconteceu?"</p>
+                    <p>Aprofunda-se nas causas raízes através de drill-down e correlações de dados entre diferentes setores.</p>
+                    <div class="expand-content">
+                        <p><strong>Detalhes:</strong> Identifica anomalias e dependências. Se a Descritiva mostra uma queda, a Diagnóstica revela se foi por sazonalidade, falha logística ou mudança no pricing da concorrência.</p>
+                    </div>
+                    <span class="expand-hint">▸ clique para expandir</span>
+                </div>
+                <div class="analysis-card reveal stagger-item" onclick="this.classList.toggle('expanded')">
+                    <div class="card-number">03</div>
+                    <h3>Preditiva</h3>
+                    <p class="card-question">"O que vai acontecer?"</p>
+                    <p>Utiliza estatística e modelos de machine learning para projetar cenários futuros com base em tendências sólidas.</p>
+                    <div class="expand-content">
+                        <p><strong>Detalhes:</strong> Crucial para o planejamento de estoque, previsão de demanda (Demand Forecasting) e identificação de tendências de churn de clientes antes que eles saiam.</p>
+                    </div>
+                    <span class="expand-hint">▸ clique para expandir</span>
+                </div>
+                <div class="analysis-card reveal stagger-item" onclick="this.classList.toggle('expanded')">
+                    <div class="card-number">04</div>
+                    <h3>Prescritiva</h3>
+                    <p class="card-question">"O que devemos fazer?"</p>
+                    <p>O ápice da maturidade analítica. Sugere caminhos automáticos e otimizações de recursos em tempo real.</p>
+                    <div class="expand-content">
+                        <p><strong>Detalhes:</strong> Atua como um consultor digital. Pode sugerir o redirecionamento de verba de marketing para canais mais eficientes ou o reajuste dinâmico de preços (Dynamic Pricing).</p>
+                    </div>
+                    <span class="expand-hint">▸ clique para expandir</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- ==================== FERRAMENTAS ==================== -->
+        <section id="tools" class="section-block tools-section">
+            <h2 class="reveal">Ferramentas de Mercado</h2>
+            <p class="reveal" style="color: var(--text-muted); margin-bottom: var(--spacing-md); font-size: 0.95rem;">🖥️ Clique em cada ferramenta para saber mais (Total: 15 Ferramentas)</p>
+
+            <div class="glass-card reveal" style="margin-bottom: var(--spacing-md);">
+                <div class="category-label">📊 Visualização & Análise</div>
+                <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Power BI</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Líder da Microsoft. Integração total com o ecossistema Office e Azure.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Tableau</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Referência em visualização intuitiva e storytelling de dados complexos.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Looker Studio</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Ferramenta focada em nuvem do Google, ideal para marketing e SEO.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Qlik Sense</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Motor associativo que conecta dados sem a necessidade de pré-processamento.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Metabase</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Solução open-source simples para democratização de SQL em times ágeis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card reveal" style="margin-bottom: var(--spacing-md);">
+                <div class="category-label">🗄️ Armazenamento & Processamento</div>
+                <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(59,130,246,0.04); border: 1px solid rgba(59,130,246,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span style="width:8px;height:8px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><strong>BigQuery</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Data Warehouse serverless do Google para análise massiva de dados.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(59,130,246,0.04); border: 1px solid rgba(59,130,246,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span style="width:8px;height:8px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><strong>Snowflake</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Nuvem de dados nativa que escala armazenamento e processamento separadamente.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(59,130,246,0.04); border: 1px solid rgba(59,130,246,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span style="width:8px;height:8px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><strong>Amazon Redshift</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Solução da AWS para petabytes de dados em arquitetura colunar rápida.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(59,130,246,0.04); border: 1px solid rgba(59,130,246,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span style="width:8px;height:8px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><strong>Azure Synapse</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Convergência de big data e analytics corporativo no ambiente Microsoft Azure.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(59,130,246,0.04); border: 1px solid rgba(59,130,246,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span style="width:8px;height:8px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><strong>Trino / Presto</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Motores SQL distribuídos de alta performance para consulta em Data Lakes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card reveal">
+                <div class="category-label">🔄 ETL & Integração</div>
+                <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Apache Airflow</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Orquestrador de workflows de dados para automação de DAGs complexas.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>dbt</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Transformação de dados via SQL direto no Warehouse seguindo padrões de engenharia.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Alteryx</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Automação de processos analíticos (APA) com interface visual intuitiva.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Informatica</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Solução Enterprise líder em qualidade, governança e integração de dados.</p>
+                    </div>
+                    <div class="tool-card" onclick="this.classList.toggle('expanded')" style="cursor: pointer; padding: 1rem; border-radius: 10px; background: rgba(0,230,118,0.04); border: 1px solid rgba(0,230,118,0.1); transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;"><span class="tool-dot" style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span><strong>Talend</strong></div>
+                        <p class="tool-desc" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:0.85rem;margin-top:0;">Plataforma completa de integração que combina ETL, Big Data e API management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== REFERÊNCIAS ==================== -->
+        <section id="references" class="section-block">
+            <h2 class="reveal">Referências</h2>
+            <div class="glass-card reveal references-list" style="padding: 2rem;">
+                <ol style="line-height: 1.8; opacity: 0.8;">
+                    <li>Humby, C. (2006). "Data is the New Oil". ANA Senior Marketer's Summit.</li>
+                    <li>Gartner (2021). "Gartner Glossary: Business Intelligence (BI)".</li>
+                    <li>Nucleus Research (2014). "Analytics Pays Back $13.01 for Every Dollar Spent".</li>
+                    <li>IBM (2023). "What is Business Intelligence?" IBM Analytics.</li>
+                    <li>Laney, D. (2001). "3D Data Management: Controlling Data Volume, Velocity, and Variety". META Group.</li>
+                </ol>
+            </div>
+        </section>
+
+        <footer class="reveal" style="text-align: center; padding: 4rem 2rem; opacity: 0.5; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 4rem;">
+            <p>&copy; 2026 Atividade 01-Big Data: Leonardo, Davi Cho, Luis Felipe, Raíssa e Lucas Gomes</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const state = {
+                mouse: { x: 0, y: 0 },
+                smoothMouse: { x: 0, y: 0 },
+                glitch: { intensity: 0 },
+                raf: null
+            };
+
+            const lirp = (a, b, n) => (1 - n) * a + n * b;
+
+            // === 1. INTERACTION LOOP ===
+            const updateUI = () => {
+                state.smoothMouse.x = lirp(state.smoothMouse.x, state.mouse.x, 0.15);
+                state.smoothMouse.y = lirp(state.smoothMouse.y, state.mouse.y, 0.15);
+
+                const root = document.documentElement;
+                root.style.setProperty('--mouse-x', `${state.smoothMouse.x}px`);
+                root.style.setProperty('--mouse-y', `${state.smoothMouse.y}px`);
+
+                // Update Glitch Effect
+                const glitchEl = document.querySelector('.glitch');
+                if (glitchEl) {
+                    const shadowX = state.glitch.intensity * 5;
+                    glitchEl.style.textShadow = state.glitch.intensity > 0.1 ? 
+                        `${shadowX}px 0 rgba(0,255,118,0.5), -${shadowX}px 0 rgba(255,0,80,0.5)` : '';
+                    state.glitch.intensity *= 0.9;
+                }
+
+                // Update Portal Scanner
+                const scanner = document.querySelector('.portal-scanner');
+                const practiceBox = document.querySelector('.practice-box');
+                if (scanner && practiceBox && practiceBox.isHovered) {
+                    const rect = practiceBox.getBoundingClientRect();
+                    const x = state.mouse.x - rect.left;
+                    scanner.style.left = `${x}px`;
+                }
+                // Update 3D Tilt for bento boxes
+                document.querySelectorAll('.bento-box').forEach(box => {
+                    if (box.isHovered) {
+                        const tiltWrap = box.querySelector('.tilt-wrap');
+                        const rect = box.getBoundingClientRect();
+                        const x = state.mouse.x - rect.left;
+                        const y = state.mouse.y - rect.top;
+                        const centerX = rect.width / 2;
+                        const centerY = rect.height / 2;
+                        
+                        const targetRX = (y - centerY) / 10;
+                        const targetRY = (centerX - x) / 10;
+                        
+                        box.currentRX = lirp(box.currentRX || 0, targetRX, 0.1);
+                        box.currentRY = lirp(box.currentRY || 0, targetRY, 0.1);
+                        
+                        tiltWrap.style.transform = `rotateX(${box.currentRX}deg) rotateY(${box.currentRY}deg) scale3d(1.03, 1.03, 1.03)`;
+                    }
+                });
+
+                state.raf = requestAnimationFrame(updateUI);
+            };
+
+            // === 2. EVENT LISTENERS ===
+            document.addEventListener('mousemove', (e) => {
+                const dx = e.clientX - state.mouse.x;
+                state.mouse.x = e.clientX;
+                state.mouse.y = e.clientY;
+                
+                // Increase glitch intensity on fast movement
+                state.glitch.intensity = Math.min(1, state.glitch.intensity + Math.abs(dx) * 0.05);
+            });
+
+            const bentoBoxes = document.querySelectorAll('.bento-box');
+            bentoBoxes.forEach(box => {
+                box.addEventListener('mouseenter', () => box.isHovered = true);
+                box.addEventListener('mouseleave', () => {
+                    box.isHovered = false;
+                    const tiltWrap = box.querySelector('.tilt-wrap');
+                    tiltWrap.style.transform = `rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+                    box.currentRX = 0; box.currentRY = 0;
+                });
+            });
+
+            // === 3. MAGNETIC EFFECT ===
+            const magnets = document.querySelectorAll('.adv-item, .wheel-segment, .tool-tag, .stat-pill, .ref-links a');
+            magnets.forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - (rect.left + rect.width / 2);
+                    const y = e.clientY - (rect.top + rect.height / 2);
+                    btn.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px)`;
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = `translate(0, 0)`;
+                });
+            });
+
+            // === 4. REVEAL SYSTEM ===
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        const children = entry.target.querySelectorAll('.adv-item, .wheel-segment, .tool-tag');
+                        children.forEach((child, i) => {
+                            setTimeout(() => {
+                                child.style.opacity = '1';
+                                child.style.transform = 'translateY(0)';
+                            }, i * 60);
+                        });
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+            // Initial call to interactions loop
+            state.raf = requestAnimationFrame(updateUI);
+        });
+    </script>
+</body>
+</html>
